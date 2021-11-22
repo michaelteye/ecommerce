@@ -6,5 +6,5 @@ urlpatterns = [
     path('books', ListBook.as_view(), name='books'),
     path('book/<int:pk>', DetailBook.as_view(),name='singlebook'),
     path('products',ListProduct.as_view(),name='products'),
-    path('product/<int:pk>/',DetailProduct.as_view(), name='singleproduct'),
+    path('product/number/<int:pk>/',DetailProduct.as_view(), name='singleproduct'),
 ]
